@@ -1,10 +1,16 @@
 
-const newMessage = 'juanca';
-
+const newMessage = {
+  nombre: 'juanca',
+  apellido: 'ulloa'
+};
+const getResult =  () =>{
+    return 'mapache';
+}
 export const FirstApp = () => {
+
   return (
     <>
-    <h1>{ newMessage }</h1>
+    <h1>{`Hola  ${getResult()} ${newMessage.apellido} `}</h1>
     <p>soy un subtitulo</p>
     </>
   )
